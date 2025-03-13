@@ -103,7 +103,7 @@ const stalls = [
 // Get unique categories
 const categories = Array.from(new Set(stalls.map(stall => stall.category)));
 
-export function StallsPage() {
+const StallsPage=()=>{
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 

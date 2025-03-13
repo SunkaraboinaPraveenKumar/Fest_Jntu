@@ -103,7 +103,7 @@ const events = [
 // Get unique categories
 const categories = Array.from(new Set(events.map(event => event.category)));
 
-export function EventsPage() {
+const EventsPage=()=>{
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
